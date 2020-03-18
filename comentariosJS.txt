@@ -1,0 +1,31 @@
+$(function(){
+    //aqui vai todo o código de JS
+    $('nav.mobile').click(function(){
+        //oq vai acontecer QUANDO CLICAR na nav.mobile
+        var listaMenu = $('nav.mobile ul');
+        //Abrir menu através do fadeIn
+        /*
+        if(listaMenu.is(':hidden') == true)
+            listaMenu.fadeIn();
+        else
+            listaMenu.fadeOut();
+        */
+       
+        //abrir ou fechar o menu
+       listaMenu.slideToggle();
+
+       //abrir ou fechar sem eeitos
+
+       /*if(listaMenu.is(':hidden') == true){
+            listaMenu.show();
+            listaMenu.css('display','block');
+        }
+        else{
+            listaMenu.hide();
+            listaMenu.css('display','none');
+        }
+       */
+
+    })
+    
+})
